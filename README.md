@@ -14,21 +14,24 @@
   - Node.js
   - Express
   - Typescript
-  - MariaDB
+  - Mongo DB (Atlas)
 
 ## 개발 순서
-1. 관리자 웹페이지
+1. API 서버
+  - 아래 기술된 각 서비스에 대한 API 서버 구성
+
+2. 관리자 웹페이지
   - Target: PC Web
   - 매장등록
   - 
 
-2. 고객용 앱
+3. 고객용 앱
   - Target: Mobile Web
 
-3. 매장용 앱
+4. 매장용 앱
   - Target: PC Web
 
 
-4. 라이더용 앱
+5. 라이더용 앱
   - Target: PC Web
   
