@@ -7,18 +7,31 @@
 ## 관련 기술
 - Front-end
   - React
-  - Adobe XD
   - Typescript
 
 - Back-end
   - Node.js
   - Express
   - Typescript
+
+- DB
   - Mongo DB (Atlas)
+
+- Design
+  - Adobe XD
+  - Zeplin
+
+- Coop
+  - Slack
 
 ## 개발 순서
 1. API 서버
   - 아래 기술된 각 서비스에 대한 API 서버 구성
+  - uri common prefix: /api/v1
+  - 관리자 웹페이지: /admin
+  - 고객용 앱: /mobile
+  - 매장용 앱: /store
+  - 라이더용 앱: /delivery
 
 2. 관리자 웹페이지
   - Target: PC Web
