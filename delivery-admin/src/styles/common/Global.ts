@@ -1,11 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
-import { ThemeType } from './theme';
 
-interface GlobalStyleProps {
-  theme: ThemeType;
-}
-
-const GlobalStyle = createGlobalStyle<GlobalStyleProps>`
+const GlobalStyle = createGlobalStyle`
   /* http://meyerweb.com/eric/tools/css/reset/
    v5.0.1 | 20191019
    License: none (public domain)

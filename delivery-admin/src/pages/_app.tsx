@@ -1,7 +1,7 @@
 import { AppProps } from 'next/app';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyle from '../styles/common/Global';
-import theme from '../styles/common/theme';
+import { theme } from '../styles/common/theme';
 
 interface CustomAppProps extends AppProps {}
 
