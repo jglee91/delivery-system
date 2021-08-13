@@ -9,9 +9,11 @@ const creator = 'jglee91';
 interface LayoutProps {
   pageTitle: string;
   description?: string;
+  header?: boolean;
+  footer?: boolean;
 }
 
-const Layout: React.FC<LayoutProps> = ({ pageTitle, description, children }) => (
+const Layout: React.FC<LayoutProps> = ({ pageTitle, description, header = true, footer = true, children }) => (
   <>
     <Head>
       <meta charSet="UTF-8" />
@@ -22,11 +24,9 @@ const Layout: React.FC<LayoutProps> = ({ pageTitle, description, children }) => 
       <meta name="twitter:creator" content={creator} key="twhandle" />
       <title>Delivery Admin | {pageTitle}</title>
     </Head>
-    <Header />
-    <Wrapper>
-      <main>{children}</main>
-    </Wrapper>
-    <Footer />
+    {header && <Header />}
+    <Wrapper>{children}</Wrapper>
+    {footer && <Footer />}
   </>
 );
 
