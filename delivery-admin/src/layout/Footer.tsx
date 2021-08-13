@@ -1,11 +1,11 @@
-import FooterElement from './Footer.styles';
+import { Wrapper } from './Footer.styles';
 
 interface FooterProps {}
 
 const Footer: React.FC<FooterProps> = () => (
-  <FooterElement>
+  <Wrapper>
     <p>&copy; {new Date().getFullYear()}</p>
-  </FooterElement>
+  </Wrapper>
 );
 
 export default Footer;

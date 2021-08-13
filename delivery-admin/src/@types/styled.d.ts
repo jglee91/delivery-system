@@ -7,6 +7,6 @@ declare module 'styled-components' {
       black: string;
     };
 
-    spacing: number;
+    spacing: (space: number) => number;
   }
 }

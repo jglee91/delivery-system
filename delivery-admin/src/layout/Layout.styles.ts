@@ -1,11 +1,9 @@
 import styled from 'styled-components';
 
-const LayoutElement = styled.div`
-  height: 800px;
-  padding: 0 ${({ theme }) => theme.spacing * 3}px;
+export const Wrapper = styled.div`
+  height: 350px;
+  padding: ${({ theme }) => `${theme.spacing(2)}px ${theme.spacing(3)}px`};
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 `;
-
-export default LayoutElement;

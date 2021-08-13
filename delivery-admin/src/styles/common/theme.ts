@@ -6,7 +6,7 @@ const theme: DefaultTheme = {
     black: '#000',
   },
 
-  spacing: 8,
+  spacing: (space) => space * 8,
 };
 
 export { theme };
