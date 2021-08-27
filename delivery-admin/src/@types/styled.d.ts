@@ -5,8 +5,10 @@ declare module 'styled-components' {
     color: {
       white: string;
       black: string;
+      gray: string;
+      darkGray: string;
     };
 
-    spacing: (space: number) => number;
+    spacing: (space: number) => string;
   }
 }
