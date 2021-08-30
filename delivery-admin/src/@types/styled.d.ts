@@ -9,6 +9,13 @@ declare module 'styled-components' {
       darkGray: string;
     };
 
+    space: {
+      sideBar: {
+        default: string;
+        full: string;
+      };
+    };
+
     spacing: (space: number) => string;
   }
 }

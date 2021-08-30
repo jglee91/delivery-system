@@ -1,7 +1,10 @@
 import Head from 'next/head';
-import Footer from './Footer';
+
 import Header from './Header';
-import { Wrapper } from './Layout.styles';
+import SideBar from './SideBar';
+import Footer from './Footer';
+
+import { Wrapper, Container } from './Layout.styles';
 
 // FIXME - hard coding
 const creator = 'jglee91';
@@ -24,9 +27,12 @@ const Layout: React.FC<LayoutProps> = ({ pageTitle, description, header = true, 
       <meta name="twitter:creator" content={creator} key="twhandle" />
       <title>Delivery Admin | {pageTitle}</title>
     </Head>
-    {header && <Header />}
-    <Wrapper>{children}</Wrapper>
-    {footer && <Footer />}
+    <SideBar />
+    <Wrapper>
+      {header && <Header />}
+      <Container>{children}</Container>
+      {footer && <Footer />}
+    </Wrapper>
   </>
 );
 

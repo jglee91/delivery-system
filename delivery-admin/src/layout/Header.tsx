@@ -6,7 +6,9 @@ interface HeaderProps {}
 
 const Header: React.FC<HeaderProps> = () => (
   <Wrapper>
-    <AppLink href="/" label="Home" />
+    <div>
+      <AppLink href="/" label="Home" />
+    </div>
     <Navigation>
       <AppLink href="/about" label="About" />
       <AppLink href="/contact" label="Contact" />

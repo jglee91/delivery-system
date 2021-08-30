@@ -8,6 +8,13 @@ const theme: DefaultTheme = {
     darkGray: '#aaa',
   },
 
+  space: {
+    sideBar: {
+      default: '78px',
+      full: '240px',
+    },
+  },
+
   spacing: (space) => `${space * 8}px`,
 };
 

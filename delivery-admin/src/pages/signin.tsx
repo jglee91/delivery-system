@@ -37,6 +37,7 @@ const SignIn: React.FC<SignInProps> = () => {
         body: JSON.stringify(formInput),
       });
     } catch (e) {
+      console.log(e);
       console.error(e);
     }
   };
