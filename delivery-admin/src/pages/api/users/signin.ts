@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 
 import dbConnector from 'backend/middleware/dbConnector';
-import validateRequest from 'backend/middleware/validateRequest';
+import validateRequest from 'backend/utils/validateRequest';
 
 import { createUserSchema } from 'backend/schema/user';
 import { validatePassword } from 'backend/services/user';
@@ -20,6 +20,8 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
       if (!user) {
         return res.status(401).json({ message: 'Invalid id or password' });
       }
+
+      res.status(200).json({ user });
 
       break;
 

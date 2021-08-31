@@ -45,11 +45,11 @@ const SignIn: React.FC<SignInProps> = () => {
   return (
     <Layout pageTitle="Sign In" footer={false}>
       <Wrapper>
-        <h2>Sign In</h2>
+        <h2>로그인</h2>
         <form onSubmit={onSubmit}>
           <TextInput type="text" label="ID" name="id" value={formInput.id} onChange={onChange} />
           <TextInput type="password" label="PW" name="password" value={formInput.password} onChange={onChange} />
-          <SignInButton text="Sign In" />
+          <SignInButton text="로그인" />
         </form>
       </Wrapper>
     </Layout>

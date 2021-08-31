@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 
 import dbConnector from 'backend/middleware/dbConnector';
-import validateRequest from 'backend/middleware/validateRequest';
+import validateRequest from 'backend/utils/validateRequest';
 
 import { createUserSchema } from 'backend/schema/user';
 

@@ -6,6 +6,8 @@ export const Wrapper = styled.div`
     padding: ${({ theme }) => `${theme.spacing(1)} ${theme.spacing(4)}`};
     background-color: ${({ theme }) => theme.color.black};
     color: ${({ theme }) => theme.color.white};
+    font-weight: 700;
+    cursor: pointer;
 
     &:disabled {
       opacity: 0.6;
