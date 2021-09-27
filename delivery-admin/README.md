@@ -24,3 +24,5 @@ $ yarn add -D @types/styled-components
 - [Adding MongoDB in Next.js](https://dev.to/raphaelchaula/adding-mongodb-mongoose-to-next-js-apis-3af)
 
 - [Simple Typescript debounce and throttle](https://gist.github.com/cauethenorio/52475cadbf71b31c5ffe68124b8ac836)
+
+- [Media Query Width Break Point](https://stackoverflow.com/questions/52484812/reactjs-material-ui-breakpoints)
