@@ -1,7 +1,7 @@
 import { Wrapper } from './TextInput.styles';
 
 interface TextInputProps {
-  type: string;
+  type?: string;
   label?: string;
   name?: string;
   value?: string;
@@ -9,10 +9,23 @@ interface TextInputProps {
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const TextInput: React.FC<TextInputProps> = ({ type = 'text', label, name, value, placeholder, onChange }) => (
+const TextInput: React.FC<TextInputProps> = ({
+  type = 'text',
+  label,
+  name,
+  value,
+  placeholder,
+  onChange,
+}) => (
   <Wrapper>
     {label && <label>{label}</label>}
-    <input type={type} name={name} value={value} placeholder={placeholder} onChange={onChange} />
+    <input
+      type={type}
+      name={name}
+      value={value}
+      placeholder={placeholder}
+      onChange={onChange}
+    />
   </Wrapper>
 );
 

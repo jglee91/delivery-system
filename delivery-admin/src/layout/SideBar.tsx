@@ -15,10 +15,12 @@ const SideBar: React.FC<SideBarProps> = () => {
   return (
     <Wrapper active={active}>
       <header>
-        <div className="logo">
-          <h2>Delivery Admin</h2>
-        </div>
-        <IconButton className="menu" aria-label="menu" onClick={() => setActive(!active)}>
+        <h2>Delivery Admin</h2>
+        <IconButton
+          className="menu"
+          aria-label="menu"
+          onClick={() => setActive(!active)}
+        >
           <MenuIcon />
         </IconButton>
       </header>

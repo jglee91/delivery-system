@@ -7,7 +7,8 @@ export const Wrapper = styled.aside<WrapperProps>`
   position: absolute;
   top: 0;
   left: 0;
-  width: ${({ active, theme }) => (active ? theme.space.sideBar.full : theme.space.sideBar.default)};
+  width: ${({ active, theme }) =>
+    active ? theme.space.sideBar.full : theme.space.sideBar.default};
   height: 100%;
   padding: 6px 14px;
   box-sizing: border-box;
@@ -20,17 +21,15 @@ export const Wrapper = styled.aside<WrapperProps>`
   color: white;
 
   header {
-    .logo {
+    h2 {
       height: 34px;
       display: flex;
       align-items: center;
       white-space: nowrap;
       opacity: ${({ active }) => (active ? 1 : 0)};
       transition: opacity 0.5s ease;
-
-      h2 {
-        font-weight: 700;
-      }
+      font-weight: 700;
+      pointer-events: none;
     }
 
     button {
@@ -97,6 +96,7 @@ export const Tooltip = styled.span<TooltipProps>`
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
   opacity: 0;
   transition: all 0.5s ease;
+  pointer-events: none;
 
   background-color: white;
   color: black;
